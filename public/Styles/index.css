@@ -188,7 +188,7 @@ body {font-family: "Poppins", sans-serif;}
     width: 50%;
 }
 h2 {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
@@ -235,7 +235,7 @@ p {
     justify-content: space-between;
 }
 .link h3 {
-    font-size: 18px;
+    font-size: 50px;
     color: #f9fafc;
     margin-bottom: 15px;
 }
@@ -326,7 +326,7 @@ p {
         padding: 0;
     }
     .footer {
-        padding: 30px;
+        padding: 50px;
     }
     .footer-content {
         flex-direction: column;

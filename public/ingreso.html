@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PsicoKids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/Styles/index.css">
+
 </head>
+
 <body>
-    <h1>soy la pagina de ingreso</h1>
-    <!--esta pagina se va a hacer segun el dieño que se 
+    <!-- BARRA DE NAVEGACION-->
+    <header class="header">
+        <div class="menu container">
+            <a href="/public/index.html" class="logo">Psicokids</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/public/Imagenes/intentodos/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/public/index.html">Inicio</a></li>
+                    <li><a href="/public/Nosotros.html">Nosotros</a></li>
+                    <li><a href="/public/registro.html">Registro</a></li>
+                    <li><a href="/public/ingreso.html">Ingreso</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1>Psicokids</h1>
+            <p>Explora tu mente y descubre cómo crece tu superpoder interior!</p>
+
+        </div>
+    </header>
+    <!--Formulario de ingreso
+esta pagina se va a hacer segun el dieño que se 
     tenga en el sitio web
      Debe tener un formulario de registro
      1.preguntar correo electronico
-     2. preguntar contraseña
-
-     footer
-    
-    
-    -->
+     2. preguntar contraseña-->
+    <!--FOOTER-->
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Escribe tu correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Escribe tu contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>       
+        <button type="submit" class="btn btn-primary">Ingresa</button>
+      </form>
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Siguenos</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
