@@ -15,7 +15,7 @@ body {font-family: "Poppins", sans-serif;}
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(/public/Imagenes/intentodos/navbar1.jpg);
+        url(../Imagenes/intentodos/navbar1.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,10 +107,14 @@ body {font-family: "Poppins", sans-serif;}
     margin-bottom: 50px;
 }
 .psicokids-1 {
+    
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 25px;
 }
 .psicokids-1 img {
-    width: 350px;    
+    width: 90%;    
 }
 .psicokids-img {
     position:absolute;
@@ -126,7 +130,7 @@ body {font-family: "Poppins", sans-serif;}
     background-image: linear-gradient(
         rgba(0,0,0, 0.7),
         rgba(0,0,0, 0.7)),
-        url(/public/Imagenes/intentodos/navbar1.avif);
+        url(../Imagenes/intentodos/navbar1.avif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,14 +178,14 @@ body {font-family: "Poppins", sans-serif;}
     background-color: #e1e2e6;
 }
 .general-2 {
-    background-image: url(/public/Imagenes/intentodos/general1.avif);
+    background-image: url(../Imagenes/intentodos/general1.avif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
 }
 .general-3 {
-    background-image: url(/public/Imagenes/intentodos/general2.avif);
+    background-image: url(../Imagenes/intentodos/general2.avif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,6 +249,9 @@ p {
     display: block;
     margin-bottom: 15px;
 }
+.miformulario{
+    margin: 15px;
+}
 
 @media( max-width:991px) {
     .menu{
@@ -276,11 +283,23 @@ p {
     .header-content p {
         padding: 0;
     }
+    .header-content h1{
+        font-size: 45px;
+        line-height: 40px;
+        
+    }
     .psicokids {
         padding: 30px;
     }
     .psicokids-content h2 {
+        font-size: 40px;
+        line-height: 40px;
         padding: 0;
+        
+    }
+    .servicios-content h2{
+        font-size: 35px;
+        line-height: 40px;
     }
     .txt-p {
         padding: 0;
@@ -309,7 +328,7 @@ p {
         flex-direction: column;
     }
     .general-1 {
-        width: 100;
+        width: 100%;
         padding: 30px;
         text-align: center;
     }
