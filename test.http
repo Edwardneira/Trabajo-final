@@ -1,8 +1,18 @@
-### OBTENER TODOS LOS USUARIOS
+### Obtener todos los usuarios
 GET http://localhost:9000/api/obtenerUsuario
-### CREAR TODOS LOS USUARIOS
+
+
+
+### Crear producto
 POST http://localhost:9000/api/crearUsuario
-### MODIFICAR USUARIO POR ID
-PUT http://localhost:9000/api/modificarUsuario/:_id
-### ELIMAR USUSARIO POR ID
+
+Content-Type: application/json
+
+### Actualizar un usuario por ID
+PUT hhttp://localhost:9000/api/modificarUsuario/:_id
+
+Content-Type: application/json
+
+### Eliminar un usuario por ID
 DELETE http://localhost:9000/api/eliminarUsuario/:_id
+APPS.JS
