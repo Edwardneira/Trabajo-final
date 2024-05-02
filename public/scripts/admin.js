@@ -1,17 +1,14 @@
-// Obtener los datos de la base de datos al cargar la página
-console.log('hola');
-
-
+console.log("hola");
 // Función para obtener datos de la base de datos
 const mostrarUsuarios = async () => {
   try {
-    const response = await fetch('http://localhost:9000/api/obtenerUsuario');
+    const response = await fetch("http://localhost:9000/api/obtenerUsuario");
     const data = await response.json();
     console.log(data)
     // Llamar a la función para crear filas en la tabla con los datos recibidos
     crearTabla(data);
   } catch (error) {
-    console.error('Error al obtener datos:', error);
+    console.error("Error al obtener datos:", error);
   }
 }
 
@@ -29,12 +26,12 @@ function crearTabla(usuarios) {
             <td>${usuario.nombreCompleto}</td>
             <td>${usuario.correo}</td>
             <td class="acciones">
-              <button type="button" class="btn btn-info" id="${usuario._id}" onclick='editarUsuario(event)'>
+              <button type="button" class="btn btn-info" id="${usuario._id}" onclick="editarUsuario(event)">
                 <i class="bi bi-pencil-square"></i>
                 Editar
               </button>
 
-              <button type="button" class="btn btn-danger" id="${usuario._id}" onclick='eliminarUsuario(event)'>
+              <button type="button" class="btn btn-danger" id="${usuario._id}" onclick="eliminarUsuario(event)">
                 <i class="bi bi-trash"></i>
                 Eliminar
               </button>
@@ -49,7 +46,7 @@ mostrarUsuarios();
 
 
 function eliminarUsuario(event) {
-  console.log('eliminar');
+  console.log("eliminar");
   const idUsuarioEliminar = event.target.id;
   console.log(idUsuarioEliminar);
 
@@ -57,17 +54,17 @@ function eliminarUsuario(event) {
     method: 'DELETE',
   }).then(response => {
     if (!response.ok) {
-      throw new Error('Error al eliminar usuario');
+      throw new Error("Error al eliminar usuario");
     }
-    alert('Usuario eliminado correctamente');
+    alert("Usuario eliminado correctamente");
     mostrarUsuarios();
   }).catch(error => {
-    console.error('Error al eliminar usuario:', error);
+    console.error("Error al eliminar usuario:", error);
   });
 }
 
 function editarUsuario(event) {
-  console.log('editar');
+  console.log("editar");
   const idUsuarioEditar = event.target.id;
   console.log(idUsuarioEditar);
 }
